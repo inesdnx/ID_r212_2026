@@ -1,0 +1,88 @@
+:root {
+  /* Couleurs */
+  --color-primary: #2563eb;
+  --color-text: #1f2937;
+  --color-text-light: #6b7280;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f9fafb;
+
+  /* Espacements */
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* Typographie */
+  --font-base: system-ui, -apple-system, sans-serif;
+  --line-height: 1.6;
+}
+
+body {
+  font-family: var(--font-base);
+  line-height: var(--line-height);
+  color: var(--color-text);
+  margin: 0;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md) var(--space-lg);
+}
+
+header nav ul {
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: var(--space-lg);
+    text-align: center;
+}
+
+.cta {
+    display: flex;
+    padding: var(--space-md) var(--space-md);
+    border-radius: 12px;
+    background-color:var(--color-primary);
+}
+
+.projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+}
+
+.carte {
+  padding: var(--space-lg);
+  background-color: var(--color-bg-alt);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  /* Navigation empilée */
+  /* Hero plus compact */
+  /* Section "à propos" en colonne */
+}
+
+a, button {
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.carte {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.carte:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
