@@ -1,0 +1,46 @@
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: #3d3a4b;
+}
+
+main {
+  max-width: 150ch;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+.container {
+    display : flex;
+    background-color: rgb(237, 188, 211);
+}
+
+.container article {
+    background-color: rgb(177, 186, 227);
+    margin: 10px;
+    padding: 50px;
+    font-size: 24px;
+}
+
+header {
+    display: flex;
+    background-color:rgb(178, 206, 252);
+}
+.hero {
+    display: flex;
+    background-color:rgb(252, 208, 248);
+}
+
+footer {
+    display: flex;
+    background-color:rgb(133, 133, 170); 
+}
